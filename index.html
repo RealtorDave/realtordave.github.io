@@ -2,600 +2,477 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>complete responsive real estate website design tutorial</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>STATED.</title>
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="css/styles.css" type="text/css" rel="Stylesheet" />
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
+
 <body>
-    
-<!-- header section starts  -->
+    <div id="header-hero-container">
+        <header>
+            <div class="flex container">
+                <a id="logo" href="#">STATED.</a>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
 
-<header>
-
-    <a href="#" class="logo"><span>real</span>Estate</a>
-
-    <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#services">services</a>
-        <a href="#featured">featured</a>
-        <a href="#agents">agents</a>
-        <a href="#contact">contact</a>
-    </nav>
-
-    <div class="icons">
-        <div id="menu-bars" class="fas fa-bars"></div>
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-user"></a>
+                    <ul id="nav-menu">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="http://www.google.com" target="_blank">Properties</a></li>
+                        <li><a href="#">Agents</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section id="hero">
+            <div class="fade"></div>
+            <div class="hero-text">
+                <h1>Buy and sell real estate properties</h1>
+                <p>Lorem ipsum dolor sit amet consectectur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
+            </div>
+        </section>
     </div>
 
-</header>
-
-<!-- header section ends -->
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <form action="">
-
-        <h3>find your perfect home</h3>
-
-        <div class="buttons-container">
-            <a href="#" class="btn">for rent</a>
-            <a href="#" class="btn">for sell</a>
-        </div>
-
-        <div class="inputBox">
-            <input type="search" name="" placeholder="neighborhood" id="">
-            <input type="search" name="" placeholder="city" id="">
-            <select name="" id="">
-                <option value="" disabled hidden selected>minimum price</option>
-                <option value="$5000">$5000</option>
-                <option value="$10000">$10000</option>
-                <option value="$15000">$15000</option>
-                <option value="$20000">$20000</option>
-                <option value="$25000">$25000</option>
-            </select>
-            <select name="" id="">
-                <option value="" disabled hidden selected>maximum price</option>
-                <option value="$30000">$30000</option>
-                <option value="$35000">$35000</option>
-                <option value="$40000">$40000</option>
-                <option value="$45000">$45000</option>
-                <option value="$50000">$50000</option>
-            </select>
-            <select name="" id="">
-                <option value="" disabled hidden selected>property status</option>
-                <option value="Ready To Move">Ready To Move</option>
-                <option value="under construction">under construction</option>
-                <option value="furnished">furnished</option>
-                <option value="semi-furnished">semi-furnished</option>
-                <option value="unfurnished">unfurnished</option>
-            </select>
-            <select name="" id="">
-                <option value="" disabled hidden selected>property type</option>
-                <option value="flat">flat</option>
-                <option value="house">house</option>
-                <option value="shop">shop</option>
-                <option value="warehouse">warehouse</option>
-                <option value="land">land</option>
-            </select>
-            <select name="" id="">
-                <option value="" disabled hidden selected>BHK</option>
-                <option value="1 BHK">1 BHK</option>
-                <option value="2 BHK">2 BHK</option>
-                <option value="3 BHK">3 BHK</option>
-                <option value="4 BHK">4 BHK</option>
-                <option value="5 BHK">5 BHK</option>
-            </select>
-            <select name="" id="">
-                <option value="" disabled hidden selected>aminities</option>
-                <option value="parking space">parking space</option>
-                <option value="swimming pool">swimming pool</option>
-                <option value="playground">playground</option>
-                <option value="security">security</option>
-                <option value="all">all</option>
-            </select>
-            <select name="" id="">
-                <option value="" disabled hidden selected>bedrooms</option>
-                <option value="1 bedroom">1 bedroom</option>
-                <option value="2 bedroom">2 bedroom</option>
-                <option value="3 bedroom">3 bedroom</option>
-                <option value="4 bedroom">4 bedroom</option>
-                <option value="5 bedroom">5 bedroom</option>
-            </select>
-            <select name="" id="">
-                <option value="" disabled hidden selected>bathrooms</option>
-                <option value="1 bathroom">1 bathroom</option>
-                <option value="2 bathroom">2 bathroom</option>
-                <option value="3 bathroom">3 bedroom</option>
-                <option value="4 bathroom">4 bathroom</option>
-                <option value="5 bathroom">5 bathroom</option>
-            </select>
-        </div>
-
-        <input type="submit" value="search property" class="btn">
-
-    </form>
-
-</section>
-
-<!-- home section ends -->
-
-<!-- services section starts  -->
-
-<section class="services" id="services">
-
-    <h1 class="heading"> our <span>services</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/s-1.png" alt="">
-            <h3>buying home</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsa ab cum error quas fuga ad? Perspiciatis, autem officiis?</p>
-            <a href="#" class="btn">learn more</a>
-        </div>
-
-        <div class="box">
-            <img src="images/s-2.png" alt="">
-            <h3>renting home</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsa ab cum error quas fuga ad? Perspiciatis, autem officiis?</p>
-            <a href="#" class="btn">learn more</a>
-        </div>
-
-        <div class="box">
-            <img src="images/s-3.png" alt="">
-            <h3>selling home</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsa ab cum error quas fuga ad? Perspiciatis, autem officiis?</p>
-            <a href="#" class="btn">learn more</a>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- services section ends -->
-
-<!-- featured section starts  -->
-
-<section class="featured" id="featured">
-
-    <h1 class="heading"> <span>featured</span> properties </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <div class="image-container">
-                <img src="images/img-1.jpg" alt="">
-                <div class="info">
-                    <h3>3 days ago</h3>
-                    <h3>for rent</h3>
+    <section id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="flex">
+                <div>
+                    <span class="fas fa-home"></span>
+                    <h4>Find a Property.</h4>
+                    <p>Lorem ipsum dolor sit amet consectectur adipisicing elit.</p>
                 </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>1</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
+
+                <div>
+                    <span class="fas fa-dollar-sign"></span>
+                    <h4>Buy a Property.</h4>
+                    <p>Lorem ipsum dolor sit amet consectectur adipisicing elit.</p>
                 </div>
-            </div>
-            <div class="content">
-                <div class="price">
-                    <h3>$25,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
-                </div>
-                <div class="location">
-                    <h3>modern apartments</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
-                </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
-                </div>
-                <div class="buttons">
-                    <a href="#" class="btn">request info</a>
-                    <a href="#" class="btn">view details</a>
+
+                <div>
+                    <span class="fas fa-chart-line"></span>
+                    <h4>Investing.</h4>
+                    <p>Lorem ipsum dolor sit amet consectectur adipisicing elit.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="box">
-            <div class="image-container">
-                <img src="images/img-2.jpg" alt="">
-                <div class="info">
-                    <h3>6 days ago</h3>
-                    <h3>for sell</h3>
+    <section id="properties">
+        <div class="container">
+            <h2>Properties</h2>
+            <div id="properties-slider" class="slick">
+                <div>
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <p class="price">$3,400,000</p>
+                        <span class="beds">6 beds</span>
+                        <span class="baths">4 baths</span>
+                        <span class="sqft">4,250 sqft.</span>
+                        <address>
+                            480 12th, Unit 14, San Francisco, CA
+                        </address>
+                    </div>
                 </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>2</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>7</h3></a>
+
+                <div>
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_2.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <p class="price">$3,400,000</p>
+                        <span class="beds">6 beds</span>
+                        <span class="baths">4 baths</span>
+                        <span class="sqft">4,250 sqft.</span>
+                        <address>
+                            480 12th, Unit 14, San Francisco, CA
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_3.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <p class="price">$3,400,000</p>
+                        <span class="beds">6 beds</span>
+                        <span class="baths">4 baths</span>
+                        <span class="sqft">4,250 sqft.</span>
+                        <address>
+                            480 12th, Unit 14, San Francisco, CA
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_4.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <p class="price">$3,400,000</p>
+                        <span class="beds">6 beds</span>
+                        <span class="baths">4 baths</span>
+                        <span class="sqft">4,250 sqft.</span>
+                        <address>
+                            480 12th, Unit 14, San Francisco, CA
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <p class="price">$3,400,000</p>
+                        <span class="beds">6 beds</span>
+                        <span class="baths">4 baths</span>
+                        <span class="sqft">4,250 sqft.</span>
+                        <address>
+                            480 12th, Unit 14, San Francisco, CA
+                        </address>
+                    </div>
                 </div>
             </div>
-            <div class="content">
-                <div class="price">
-                    <h3>$25,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
+
+            <button class="rounded">View All Property Listings</button>
+        </div>
+    </section>
+
+    <section id="agents">
+        <div class="container">
+            <h2>Agents</h2>
+            <p class="large-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</p>
+
+            <div class="flex">
+                <div class="card">
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_1.jpg" alt="Realtor 1" />
+                    <h3>Kaiara Spencer</h3>
+                    <p>Real Estate Agent</p>
                 </div>
-                <div class="location">
-                    <h3>modern apartments</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
+
+                <div class="card">
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_2.jpg" alt="Realtor 1" />
+                    <h3>Dave Simpson</h3>
+                    <p>Real Estate Agent</p>
                 </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+
+                <div class="card">
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_3.jpg" alt="Realtor 1" />
+                    <h3>Ben Thompson</h3>
+                    <p>Real Estate Agent</p>
                 </div>
-                <div class="buttons">
-                    <a href="#" class="btn">request info</a>
-                    <a href="#" class="btn">view details</a>
+
+                <div class="card">
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_4.jpg" alt="Realtor 1" />
+                    <h3>Kyla Stewart</h3>
+                    <p>Real Estate Agent</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_5.jpg" alt="Realtor 1" />
+                    <h3>Rich Moffatt</h3>
+                    <p>Real Estate Agent</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_6.jpg" alt="Realtor 1" />
+                    <h3>Stuart Redman</h3>
+                    <p>Real Estate Agent</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="box">
-            <div class="image-container">
-                <img src="images/img-3.jpg" alt="">
-                <div class="info">
-                    <h3>1 days ago</h3>
-                    <h3>for rent</h3>
-                </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>1</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>6</h3></a>
-                </div>
+    <section id="the-best">
+        <div class="flex container">
+            <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1" />
+            <div>
+                <h2>We Are the Best Real Estate Company</h2>
+                <p class="large-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit Quo suscipit omnis iste velit maxime.</p>
+                <ul>
+                    <li>Placeat maxime animi minus</li>
+                    <li>Placeat maxime animi minus</li>
+                    <li>Placeat maxime animi minus</li>
+                    <li>Placeat maxime animi minus</li>
+                    <li>Placeat maxime animi minus</li>
+                </ul>
+                <button class="rounded">Learn More</button>
             </div>
-            <div class="content">
-                <div class="price">
-                    <h3>$25,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="flex">
+                <div>
+                    <div class="fas fa-home"></div>
+                    <div class="services-card-right">
+                        <h3>Search Property</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                        <a href="#">Learn More</a>
+                    </div>
                 </div>
-                <div class="location">
-                    <h3>modern apartments</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
+
+                <div>
+                    <div class="fas fa-dollar-sign"></div>
+                    <div class="services-card-right">
+                        <h3>Buy Property</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                        <a href="#">Learn More</a>
+                    </div>
                 </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+
+                <div>
+                    <div class="fas fa-chart-line"></div>
+                    <div class="services-card-right">
+                        <h3>Investing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                        <a href="#">Learn More</a>
+                    </div>
                 </div>
-                <div class="buttons">
-                    <a href="#" class="btn">request info</a>
-                    <a href="#" class="btn">view details</a>
+
+                <div>
+                    <div class="fas fa-building"></div>
+                    <div class="services-card-right">
+                        <h3>List a Property</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="fas fa-search"></div>
+                    <div class="services-card-right">
+                        <h3>Property Locator</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="fas fa-mobile-alt"></div>
+                    <div class="services-card-right">
+                        <h3>Stated Apps</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                        <a href="#">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="box">
-            <div class="image-container">
-                <img src="images/img-4.jpg" alt="">
-                <div class="info">
-                    <h3>9 days ago</h3>
-                    <h3>for rent</h3>
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Are Saying</h2>
+            <div id="testimonials-slider">
+                <div>
+                    <blockquote>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nostrum vitae explicabo dolore ratione. Quia iure quod ipsa blanditiis sint nulla a nam veritatis ex eos. Dicta molestiae dolorum laudantium."</p>
+                    </blockquote>
+                    <div class="testimonials-caption">
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/person_7.jpg" alt="Client 7" />
+                        <p>Nick Andros</p>
+                    </div>
                 </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>2</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>6</h3></a>
-                </div>
-            </div>
-            <div class="content">
-                <div class="price">
-                    <h3>$25,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
-                </div>
-                <div class="location">
-                    <h3>modern apartments</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
-                </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
-                </div>
-                <div class="buttons">
-                    <a href="#" class="btn">request info</a>
-                    <a href="#" class="btn">view details</a>
-                </div>
-            </div>
-        </div>
 
-        <div class="box">
-            <div class="image-container">
-                <img src="images/img-5.jpg" alt="">
-                <div class="info">
-                    <h3>10 days ago</h3>
-                    <h3>for sell</h3>
+                <div>
+                    <blockquote>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nostrum vitae explicabo dolore ratione. Quia iure quod ipsa blanditiis sint nulla a nam veritatis ex eos. Dicta molestiae dolorum laudantium."</p>
+                    </blockquote>
+                    <div class="testimonials-caption">
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/person_5.jpg" alt="Client 7" />
+                        <p>Larry Underwood</p>
+                    </div>
                 </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>3</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>8</h3></a>
-                </div>
-            </div>
-            <div class="content">
-                <div class="price">
-                    <h3>$25,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
-                </div>
-                <div class="location">
-                    <h3>modern apartments</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
-                </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
-                </div>
-                <div class="buttons">
-                    <a href="#" class="btn">request info</a>
-                    <a href="#" class="btn">view details</a>
+
+                <div>
+                    <blockquote>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nostrum vitae explicabo dolore ratione. Quia iure quod ipsa blanditiis sint nulla a nam veritatis ex eos. Dicta molestiae dolorum laudantium."</p>
+                    </blockquote>
+                    <div class="testimonials-caption">
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/person_8.jpg" alt="Client 7" />
+                        <p>Fran Goldsmith</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="box">
-            <div class="image-container">
-                <img src="images/img-6.jpg" alt="">
-                <div class="info">
-                    <h3>3 days ago</h3>
-                    <h3>for sell</h3>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+
+            <div class="flex">
+                <div id="form-container">
+                    <h3>Contact Form</h3>
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" />
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" />
+
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" />
+
+                        <label for="message">Message</label>
+                        <textarea id="message">Write your message here..</textarea>
+
+                        <button class="rounded">Send Message</button>
+                    </form>
                 </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>1</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
+
+                <div id="address-container">
+                    <label>Address</label>
+                    <address>
+                        20377 Evergreen Terrace Mountain View, California, USA 
+                    </address>
+
+                    <label>Phone</label>
+                    <a href="#">232-232-2323</a>
+
+                    <label>Email Address</label>
+                    <a href="#">ouremail@domain.com</a>
                 </div>
-            </div>
-            <div class="content">
-                <div class="price">
-                    <h3>$25,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
-                </div>
-                <div class="location">
-                    <h3>modern apartments</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
-                </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
-                </div>
-                <div class="buttons">
-                    <a href="#" class="btn">request info</a>
-                    <a href="#" class="btn">view details</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    
-</section>
-
-<!-- featured section ends -->
-
-<!-- agents section starts  -->
-
-<section class="agents" id="agents">
-
-    <h1 class="heading"> professional <span>agents</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <a href="#" class="fas fa-envelope"></a>
-            <a href="#" class="fas fa-phone"></a>
-            <img src="images/pic-1.png" alt="">
-            <h3>john deo</h3>
-            <span>agent</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
             </div>
         </div>
+    </section>
 
-        <div class="box">
-            <a href="#" class="fas fa-envelope"></a>
-            <a href="#" class="fas fa-phone"></a>
-            <img src="images/pic-2.png" alt="">
-            <h3>john deo</h3>
-            <span>agent</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
+    <footer>
+        <div class="flex container">
+            <div class="footer-about">
+                <h5>About Stated</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+            </div>
+
+            <div class="footer-quick-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-subscribe">
+                <h5>Subscribe to our Newsletter</h5>
+                <div id="subscribe-container">
+                    <input type="text" placeholder="Enter Email" />
+                    <button class="right-rounded">Send</button>
+                </div>
+
+                <h5 class="follow-us">Follow Us</h5>
+                <ul>
+                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                </ul>
             </div>
         </div>
 
-        <div class="box">
-            <a href="#" class="fas fa-envelope"></a>
-            <a href="#" class="fas fa-phone"></a>
-            <img src="images/pic-3.png" alt="">
-            <h3>john deo</h3>
-            <span>agent</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
+        <small>
+            Copyright &copy; 2019 All rights reserved | This template is made with <span class="fa fa-heart"></span> by <a href="https://colorlib.com">Colorlib</a>
+        </small>
+    </footer>
 
-        <div class="box">
-            <a href="#" class="fas fa-envelope"></a>
-            <a href="#" class="fas fa-phone"></a>
-            <img src="images/pic-4.png" alt="">
-            <h3>john deo</h3>
-            <span>agent</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
+    <script>
+        $(function () {
+            let headerElem = $('header');
+            let logo = $('#logo');
+            let navMenu = $('#nav-menu');
+            let navToggle = $('#nav-toggle');
 
-    </div>
+           $('#properties-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
+                nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 530,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    }
+                ]
+           });
 
-</section>
+           $('#testimonials-slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '<a href="#" class="slick-arrow slick-prev"><</a>',
+                nextArrow: '<a href="#" class="slick-arrow slick-next">></a>'
+           });
 
-<!-- agents section ends -->
+           navToggle.on('click', () => {
+               navMenu.css('right', '0');
+           });
 
-<!-- contact section starts  -->
+           $('#close-flyout').on('click', () => {
+                navMenu.css('right', '-100%');
+           });
 
-<section class="contact" id="contact">
+           $(document).on('click', (e) => {
+               let target = $(e.target);
+               if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
+                   navMenu.css('right', '-100%');
+               }
+           });
 
-<h1 class="heading"> <span>contact</span> us </h1>
+           $(document).scroll(() => {
+               let scrollTop = $(document).scrollTop();
 
-<div class="icons-container">
+               if (scrollTop > 0) {
+                   navMenu.addClass('is-sticky');
+                   logo.css('color', '#000');
+                   headerElem.css('background', '#fff');
+                   navToggle.css('border-color', '#000');
+                   navToggle.find('.strip').css('background-color', '#000');
+               } else {
+                   navMenu.removeClass('is-sticky');
+                   logo.css('color', '#fff');
+                   headerElem.css('background', 'transparent');
+                   navToggle.css('bordre-color', '#fff');
+                   navToggle.find('.strip').css('background-color', '#fff');
+               }
 
-    <div class="icons">
-        <img src="images/icon-1.png" alt="">
-        <h3>phone number</h3>
-        <p>+123-456-7890</p>
-        <p>+111-222-3333</p>
-    </div>
+               headerElem.css(scrollTop >= 200 ? {'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #999'} : {'padding': '1rem 0', 'box-shadow': 'none' });
+           });
 
-    <div class="icons">
-        <img src="images/icon-2.png" alt="">
-        <h3>email address</h3>
-        <p>shaikhanas@gmail.com</p>
-        <p>anasshaikha@gmail.com</p>
-    </div>
-
-     <div class="icons">
-        <img src="images/icon-3.png" alt="">
-        <h3>office address</h3>
-        <p>jogeshwari, mumbai, india - 400104</p>
-    </div>
-
-</div>
-
-<div class="row">
-
-    <form action="">
-        <div class="inputBox">
-            <input type="text" placeholder="name">
-            <input type="number" placeholder="number">
-        </div>
-        <div class="inputBox">
-            <input type="email" placeholder="email">
-            <input type="text" placeholder="subject">
-        </div>
-        <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
-        <input type="submit" value="send message" class="btn">
-    </form>
-
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1626697480414!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
-
-</div>
-
-</section>
-
-<!-- contact section ends -->
-
-<!-- footer section starts  -->
-
-<section class="footer">
-
-    <div class="footer-container">
-
-        <div class="box-container">
-
-            <div class="box">
-                <h3>branch location</h3>
-                <a href="#">india</a>
-                <a href="#">USA</a>
-                <a href="#">france</a>
-                <a href="#">russia</a>
-                <a href="#">japan</a>
-            </div> 
-            
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="#">home</a>
-                <a href="#">services</a>
-                <a href="#">featured</a>
-                <a href="#">agents</a>
-                <a href="#">contact</a>
-            </div> 
-
-            <div class="box">
-                <h3>extra links</h3>
-                <a href="#">my account</a>
-                <a href="#">my favorite</a>
-                <a href="#">my list</a>
-            </div> 
-
-            <div class="box">
-                <h3>follow us</h3>
-                <a href="#">facebook</a>
-                <a href="#">twitter</a>
-                <a href="#">instagram</a>
-                <a href="#">linkedin</a>
-            </div> 
-
-        </div>
-
-        <div class="credit">created by <span> mr. web designer </span> | all rights reserved! </div>
-
-    </div>
-
-</section>
-
-<!-- footer section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- javascript part  -->
-<script>
-
-let menu = document.querySelector('#menu-bars');
-let navbar = document.querySelector('.navbar');
-
-menu.onclick = () =>{
-    navbar.classList.toggle('active');
-    menu.classList.toggle('fa-times');
-}
-
-window.onscroll = () =>{
-    navbar.classList.remove('active');
-    menu.classList.remove('fa-times');
-}
-
-</script>
-
+           $(document).trigger('scroll');
+        });
+    </script>
 </body>
 </html>
